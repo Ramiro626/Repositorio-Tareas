@@ -1,0 +1,36 @@
+
+float calcularTarjeta(float precioTotalVuelo, float ratio) {
+	return precioTotalVuelo + precioTotalVuelo * ratio / 100;
+}
+
+float dividir(float dividendo, float divisor) {
+	return dividendo / divisor;
+}
+
+float calcularDiferencia(float precioTotalAerolineas, float precioTotalLatam)
+{
+	float resultado = precioTotalAerolineas - precioTotalLatam;
+
+	if (resultado < 0) {
+		return resultado * -1;
+	}
+
+	return resultado;
+}
+
+int validar(int kilometros, float precioTotalAerolineas, float precioTotalLatam) {
+	int valido= 0;
+
+	if (kilometros == 0) {
+		printf("ERROR! Faltan ingresar los kilometros del vuelo\n");
+		break;
+	} else if (precioTotalAerolineas == 0) {
+		printf("ERROR! Faltan ingresar el precio del vuelo para AEROLINEAS\n");
+	} else if (precioTotalLatam == 0) {
+		printf("ERROR! Faltan ingresar el precio del vuelo para LATAM\n");
+	} else {
+		valido= 1;
+	}
+
+	return valido;
+}

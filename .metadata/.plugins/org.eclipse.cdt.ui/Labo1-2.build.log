@@ -1,0 +1,7 @@
+18:14:42 **** Rebuild of configuration Debug for project Labo1-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\clase1A.o" "..\\src\\clase1A.c" 
+gcc -o Labo1-2 "src\\clase1A.o" 
+
+18:14:43 Build Finished. 0 errors, 0 warnings. (took 825ms)
+

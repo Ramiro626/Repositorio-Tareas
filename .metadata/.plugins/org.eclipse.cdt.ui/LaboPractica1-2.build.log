@@ -1,0 +1,7 @@
+18:14:44 **** Rebuild of configuration Debug for project LaboPractica1-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Tarea clase 1.o" "..\\src\\Tarea clase 1.c" 
+gcc -o LaboPractica1-2.exe "src\\Tarea clase 1.o" 
+
+18:14:51 Build Finished. 0 errors, 0 warnings. (took 7s.31ms)
+

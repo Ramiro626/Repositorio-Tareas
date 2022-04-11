@@ -1,0 +1,181 @@
+Info: Nothing to build for Trabajo Practico 1
+Info: Nothing to build for Trabajo Practico 1
+20:09:21 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'validar':
+..\src\funciones.c:25:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   25 |   printf("ERROR! Faltan ingresar los kilometros del vuelo\n");
+      |   ^~~~~~
+..\src\funciones.c:25:3: warning: incompatible implicit declaration of built-in function 'printf'
+..\src\funciones.c:1:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+  +++ |+#include <stdio.h>
+    1 | 
+..\src\funciones.c:26:3: error: break statement not within loop or switch
+   26 |   break;
+      |   ^~~~~
+..\src\funciones.c:28:3: warning: incompatible implicit declaration of built-in function 'printf'
+   28 |   printf("ERROR! Faltan ingresar el precio del vuelo para AEROLINEAS\n");
+      |   ^~~~~~
+..\src\funciones.c:28:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\funciones.c:30:3: warning: incompatible implicit declaration of built-in function 'printf'
+   30 |   printf("ERROR! Faltan ingresar el precio del vuelo para LATAM\n");
+      |   ^~~~~~
+..\src\funciones.c:30:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+20:09:59 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+..\src\Trabajo Practico 1.c: In function 'main':
+..\src\Trabajo Practico 1.c:19:7: warning: variable 'rt' set but not used [-Wunused-but-set-variable]
+   19 |  char rt;
+      |       ^~
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+20:40:05 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'ingresarKilometros':
+..\src\funciones.c:23:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   23 |  printf("\nIngrese los kilometros ");
+      |  ^~~~~~
+..\src\funciones.c:23:2: warning: incompatible implicit declaration of built-in function 'printf'
+..\src\funciones.c:3:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    2 | #include "funciones.h"
+  +++ |+#include <stdio.h>
+    3 | 
+..\src\funciones.c:24:2: warning: implicit declaration of function 'scanf' [-Wimplicit-function-declaration]
+   24 |  scanf("%d", &kilometros);
+      |  ^~~~~
+..\src\funciones.c:24:2: warning: incompatible implicit declaration of built-in function 'scanf'
+..\src\funciones.c:24:2: note: include '<stdio.h>' or provide a declaration of 'scanf'
+..\src\funciones.c: In function 'ingresarPreciosDeVuelos':
+..\src\funciones.c:29:2: warning: incompatible implicit declaration of built-in function 'printf'
+   29 |  printf("\nIngrese el precio de Aerolineas ");
+      |  ^~~~~~
+..\src\funciones.c:29:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\funciones.c:30:2: warning: incompatible implicit declaration of built-in function 'scanf'
+   30 |  scanf("%f", &aerolineasPrecioTotalVuelo);
+      |  ^~~~~
+..\src\funciones.c:30:2: note: include '<stdio.h>' or provide a declaration of 'scanf'
+..\src\funciones.c: In function 'calcular':
+..\src\funciones.c:56:3: warning: incompatible implicit declaration of built-in function 'printf'
+   56 |   printf("ERROR! Faltan ingresar los kilometros del vuelo\n");
+      |   ^~~~~~
+..\src\funciones.c:56:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\funciones.c:57:3: error: break statement not within loop or switch
+   57 |   break;
+      |   ^~~~~
+..\src\funciones.c:59:3: warning: incompatible implicit declaration of built-in function 'printf'
+   59 |   printf("ERROR! Faltan ingresar el precio del vuelo para AEROLINEAS\n");
+      |   ^~~~~~
+..\src\funciones.c:59:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\funciones.c:61:3: warning: incompatible implicit declaration of built-in function 'printf'
+   61 |   printf("ERROR! Faltan ingresar el precio del vuelo para LATAM\n");
+      |   ^~~~~~
+..\src\funciones.c:61:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+20:40:56 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+..\src\Trabajo Practico 1.c: In function 'main':
+..\src\Trabajo Practico 1.c:34:20: error: 'kilometros' undeclared (first use in this function)
+   34 |      "6) Salir\n", kilometros, aerolineasPrecioTotalVuelo, latamPrecioTotalVuelo);
+      |                    ^~~~~~~~~~
+..\src\Trabajo Practico 1.c:34:20: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Trabajo Practico 1.c:34:32: error: 'aerolineasPrecioTotalVuelo' undeclared (first use in this function)
+   34 |      "6) Salir\n", kilometros, aerolineasPrecioTotalVuelo, latamPrecioTotalVuelo);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Trabajo Practico 1.c:34:60: error: 'latamPrecioTotalVuelo' undeclared (first use in this function)
+   34 |      "6) Salir\n", kilometros, aerolineasPrecioTotalVuelo, latamPrecioTotalVuelo);
+      |                                                            ^~~~~~~~~~~~~~~~~~~~~
+..\src\Trabajo Practico 1.c:19:7: warning: variable 'rt' set but not used [-Wunused-but-set-variable]
+   19 |  char rt;
+      |       ^~
+20:43:50 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+..\src\Trabajo Practico 1.c: In function 'main':
+..\src\Trabajo Practico 1.c:19:7: warning: variable 'rt' set but not used [-Wunused-but-set-variable]
+   19 |  char rt;
+      |       ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+20:52:31 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+..\src\Trabajo Practico 1.c: In function 'main':
+..\src\Trabajo Practico 1.c:19:7: warning: variable 'rt' set but not used [-Wunused-but-set-variable]
+   19 |  char rt;
+      |       ^~
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Trabajo Practico 1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:52:45 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+20:55:53 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+..\src\Trabajo Practico 1.c: In function 'main':
+..\src\Trabajo Practico 1.c:19:7: warning: variable 'rt' set but not used [-Wunused-but-set-variable]
+   19 |  char rt;
+      |       ^~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+21:04:26 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+21:06:08 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+..\src\Trabajo Practico 1.c: In function 'main':
+..\src\Trabajo Practico 1.c:19:7: warning: variable 'rt' set but not used [-Wunused-but-set-variable]
+   19 |  char rt;
+      |       ^~
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+Info: Nothing to build for Trabajo Practico 1
+21:07:41 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+21:10:13 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+21:11:19 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+21:11:49 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+21:13:57 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+21:14:25 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+21:23:35 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+Info: Nothing to build for Trabajo Practico 1
+Info: Nothing to build for Trabajo Practico 1
+21:27:54 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 
+Info: Nothing to build for Trabajo Practico 1
+21:38:52 **** Incremental Build of configuration Debug for project Trabajo Practico 1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Trabajo Practico 1.o" "..\\src\\Trabajo Practico 1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o "Trabajo Practico 1.exe" "src\\Trabajo Practico 1.o" "src\\funciones.o" 

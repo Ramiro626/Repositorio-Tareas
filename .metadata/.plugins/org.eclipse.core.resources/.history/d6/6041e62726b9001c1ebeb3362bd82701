@@ -1,0 +1,53 @@
+
+#include "funciones.h"
+
+int kilometros;
+int calculado;
+
+float aerolineasPrecioTotalVuelo;
+float aerolineasPrecioTarjetaDebito;
+float aerolineasPrecioTarjetaCredito;
+float aerolineasPrecioBitcoin;
+float aerolineasPrecioPorKm;
+
+float latamPrecioTotalVuelo;
+float latamPrecioTarjetaDebito;
+float latamPrecioTarjetaCredito;
+float latamPrecioBitcoin;
+float latamPrecioPorKm;
+
+float diferenciaPrecio;
+
+float calcularTarjeta(float precioTotalVuelo, float ratio) {
+	return precioTotalVuelo + precioTotalVuelo * ratio / 100;
+}
+
+float dividir(float dividendo, float divisor) {
+	return dividendo / divisor;
+}
+
+float calcularDiferencia(float precioTotalAerolineas, float precioTotalLatam)
+{
+	float resultado = precioTotalAerolineas - precioTotalLatam;
+
+	if (resultado < 0) {
+		return resultado * -1;
+	}
+
+	return resultado;
+}
+
+int calcular(int kilometros, float precioTotalVuelo, float ratio) {
+	if (kilometros == 0) {
+		printf("ERROR! Faltan ingresar los kilometros del vuelo\n");
+		break;
+	} else if (precioTotalVuelo == 0) {
+		printf("ERROR! Faltan ingresar el precio del vuelo\n");
+	} else {
+		aerolineasPrecioTarjetaDebito = calcularTarjeta(aerolineasPrecioTotalVuelo, RATIO_TARJETA_DEBITO);
+		aerolineasPrecioTarjetaCredito = calcularTarjeta(aerolineasPrecioTotalVuelo, RATIO_TARJETA_CREDITO);
+		aerolineasPrecioBitcoin = dividir(aerolineasPrecioTotalVuelo, PRECIO_BITCOIN);
+		aerolineasPrecioPorKm = dividir(aerolineasPrecioTotalVuelo, kilometros);
+
+	}
+}

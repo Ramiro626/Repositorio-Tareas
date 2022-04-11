@@ -1,0 +1,11 @@
+18:14:55 **** Rebuild of configuration Debug for project PrograPractica3-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PrograPractica3-1.o" "..\\src\\PrograPractica3-1.c" 
+..\src\PrograPractica3-1.c: In function 'main':
+..\src\PrograPractica3-1.c:22:14: warning: implicit declaration of function 'sumar' [-Wimplicit-function-declaration]
+   22 |  resultado = sumar();
+      |              ^~~~~
+gcc -o PrograPractica3-1.exe "src\\PrograPractica3-1.o" 
+
+18:14:56 Build Finished. 0 errors, 1 warnings. (took 932ms)
+

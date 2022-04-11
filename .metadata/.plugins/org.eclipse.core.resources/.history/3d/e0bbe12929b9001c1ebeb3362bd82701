@@ -1,0 +1,104 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+#include "funciones.h"
+
+int kilometros;
+int calculado;
+
+float aerolineasPrecioTotalVuelo;
+float aerolineasPrecioTarjetaDebito;
+float aerolineasPrecioTarjetaCredito;
+float aerolineasPrecioBitcoin;
+float aerolineasPrecioPorKm;
+
+float latamPrecioTotalVuelo;
+float latamPrecioTarjetaDebito;
+float latamPrecioTarjetaCredito;
+float latamPrecioBitcoin;
+float latamPrecioPorKm;
+
+float diferenciaPrecio;
+
+int obtenerKilometros() {
+	return kilometros;
+}
+
+float obtenerPrecioAerolineas() {
+	return aerolineasPrecioTotalVuelo;
+}
+
+float obtenerPrecioLatam() {
+	return latamPrecioTotalVuelo;
+}
+
+float obtenerPrecioAerolineasPorKm() {
+	return aerolineasPrecioPorKm;
+}
+
+float obtenerPrecioLatamPorKm() {
+	return latamPrecioPorKm;
+}
+
+float obtenerDiferenciaPrecio() {
+	return diferenciaPrecio;
+}
+
+void ingresarKilometros() {
+	calculado = 0;
+	printf("\nIngrese los kilometros ");
+	scanf("%d", &kilometros);
+}
+
+void ingresarPreciosDeVuelos() {
+	calculado = 0;
+	printf("\nIngrese el precio de Aerolineas ");
+	scanf("%f", &aerolineasPrecioTotalVuelo);
+	printf("\nIngrese el precio de Latam ");
+	scanf("%f", &latamPrecioTotalVuelo);
+}
+
+float calcularTarjeta(float precioTotalVuelo, float ratio) {
+	return precioTotalVuelo + precioTotalVuelo * ratio / 100;
+}
+
+float dividir(float dividendo, float divisor) {
+	return dividendo / divisor;
+}
+
+float calcularDiferencia(float precioTotalAerolineas, float precioTotalLatam)
+{
+	float resultado = precioTotalAerolineas - precioTotalLatam;
+
+	if (resultado < 0) {
+		return resultado * -1;
+	}
+
+	return resultado;
+}
+
+int calcular() {
+	if (kilometros == 0) {
+		printf("ERROR! Faltan ingresar los kilometros del vuelo\n");
+	} else if (aerolineasPrecioTotalVuelo == 0) {
+		printf("ERROR! Faltan ingresar el precio del vuelo para AEROLINEAS\n");
+	} else if (latamPrecioTotalVuelo == 0) {
+		printf("ERROR! Faltan ingresar el precio del vuelo para LATAM\n");
+	} else {
+		aerolineasPrecioTarjetaDebito = calcularTarjeta(aerolineasPrecioTotalVuelo, RATIO_TARJETA_DEBITO);
+		aerolineasPrecioTarjetaCredito = calcularTarjeta(aerolineasPrecioTotalVuelo, RATIO_TARJETA_CREDITO);
+		aerolineasPrecioBitcoin = dividir(aerolineasPrecioTotalVuelo, PRECIO_BITCOIN);
+		aerolineasPrecioPorKm = dividir(aerolineasPrecioTotalVuelo, kilometros);
+
+		latamPrecioTarjetaDebito = calcularTarjeta(latamPrecioTotalVuelo, RATIO_TARJETA_DEBITO);
+		latamPrecioTarjetaCredito = calcularTarjeta(latamPrecioTotalVuelo, RATIO_TARJETA_CREDITO);
+		latamPrecioBitcoin = dividir(latamPrecioTotalVuelo, PRECIO_BITCOIN);
+		latamPrecioPorKm = dividir(latamPrecioTotalVuelo, kilometros);
+
+		diferenciaPrecio = calcularDiferencia(aerolineasPrecioTotalVuelo, latamPrecioTotalVuelo);
+
+		calculado = 1;
+	}
+	return calculado;
+}

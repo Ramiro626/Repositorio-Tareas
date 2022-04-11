@@ -1,0 +1,35 @@
+/*
+ ============================================================================
+ Name        : PrograPractica3-1.c
+ Author      : Ramiro Sanchez
+ Version     :
+ Copyright   : DIV D
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void sumar(int fuxi, int nuwa);
+
+int main(void) {
+	setbuf(stdout, NULL);
+	int a=2;
+	int b=4;
+
+	sumar(a, b);
+
+	return 0;
+}
+
+void sumar(int fuxi, int nuwa)
+{
+	int mobius;
+
+	mobius = fuxi + nuwa;
+
+	printf("El resultado de la suma es :%d", mobius);
+
+
+}

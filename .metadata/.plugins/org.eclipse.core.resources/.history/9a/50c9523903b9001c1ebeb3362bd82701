@@ -1,0 +1,89 @@
+/*
+ ============================================================================
+ Name        :  Progra2-3.c
+ Author      :  Ramiro Sanchez
+ Version     :  1
+ Copyright   :  DIV D
+ Description :  Ejercicio 2-3:
+				Debemos alquilar el servicio de transporte para llegar a Mar del Plata con un grupo de personas,
+				de cada persona debemos obtener los siguientes datos:
+				- Número de cliente,
+				- Estado civil ('s' para soltero", 'c' para casado o 'v' viudo),
+				- Edad (Solo mayores de edad, más de 17),
+				- Temperatura corporal (validar por favor)
+				- Genero ('f' para femenino, 'm' para masculino, 'o' para no binario).
+				NOTA: El precio por pasajero es de $600.
+				Se debe informar (solo si corresponde):
+				a) La cantidad de personas con estado "viudo" de más de 60 años.
+				b) el número de cliente y edad de la mujer soltera más joven.
+				c) cuánto sale el viaje total sin descuento.
+				d) si hay más del 50% de los pasajeros que tiene más de 60 años , el precio final tiene un descuento del 25%, que
+				solo mostramos si corresponde.
+ ============================================================================
+ */
+
+//Librerias
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+//Inicio funcion
+int main(void) {
+	setbuf(stdout, NULL); //Limpieza consola
+
+	//Declaracion e Inicializacion de variables
+	int numCliente, edad, tempCorp;
+	char estCivil, genero, rt;
+	int isNumber;
+	rt = 's';
+
+	//loop principal
+	while (rt == 's')
+	{
+		do { //loop numero de cliente
+			printf("Ingrese un numero de cliente\n");
+			isNumber = scanf(" %d", &numCliente); //guardo en variable de control si es numero o no con funcion scanf
+			if (isNumber == 0 || numCliente <= 0) { // valido
+				printf("Numero de cliente invalido!\n");
+				fflush(stdin); //limpio buffer
+			}
+		} while(isNumber == 0 || numCliente <= 0);
+
+		do
+		{
+			printf("Ingrese un estado civil: S para soltero, C para casado, V para viudo\n");
+		    scanf(" %c", &estCivil);
+		    if (estCivil != 's' && estCivil != 'c' && estCivil != 'v') {
+		    	printf("Estado civil invalido!\n");
+		    	fflush(stdin); //limpia buffer
+		    }
+		}while(estCivil != 'f' && estCivil != 'm' && estCivil != 'o');
+
+		do
+		{
+			printf("Ingrese un genero: f (femenino), m (masculino), o (no binario)\n");
+		    scanf(" %c", &genero);
+		    if (genero != 'f' && genero != 'm' && genero != 'o') {
+		    	printf("Genero invalido!\n");
+		    	fflush(stdin); //limpia buffer
+		    }
+		}while(genero != 'f' && genero != 'm' && genero != 'o');
+
+
+		//Pregunta RT para continuar ingresando datos.
+		printf("Desea continuar? (S para si, N para no)\n");
+		scanf(" %c", &rt);
+		rt = tolower(rt);
+		//validacion RT
+		while(rt != 's' && rt != 'n')
+		{
+			printf("Error, ingrese S para si o N para no\n");
+			scanf(" %c", &rt);
+			rt = tolower(rt);
+		}
+	}
+
+	printf("\nFin de programa");
+
+	return 0;
+}

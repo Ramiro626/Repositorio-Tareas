@@ -1,0 +1,9 @@
+11:51:17 **** Build of configuration Debug for project clase1A ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Users/Painw/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin/server;C:/Users/Painw/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Git\cmd;D:\MinGW\bin;C:\Users\Painw\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;D:\Eclipse\eclipse]
+
+11:51:17 Build Failed. 1 errors, 0 warnings. (took 110ms)
+

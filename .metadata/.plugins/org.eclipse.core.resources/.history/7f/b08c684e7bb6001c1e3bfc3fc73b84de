@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ Name        : LaboPractica1-3.c
+ Author      : Ramiro Sanchez
+ Version     : 1
+ Copyright   : DIV D
+ Description : funciones
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void sum(int a, int b);
+
+int main()
+{
+    int a, b;
+    printf("Enter a:\n");
+    scanf("%d", &a);
+    printf("enter b\n");
+    scanf("%d", &b);
+
+    sum(a,b);
+}
+
+void sum(int a, int b) {
+	int c, d;
+	c = a;
+	d = b;
+    ola = c + d;
+    printf("sumar es %d", ola);
+}
+

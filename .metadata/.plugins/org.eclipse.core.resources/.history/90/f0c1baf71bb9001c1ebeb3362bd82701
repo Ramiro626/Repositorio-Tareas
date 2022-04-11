@@ -1,0 +1,22 @@
+/*
+ * funciones.h
+ *
+ *  Created on: 10 abr. 2022
+ *      Author: Painwheel
+ */
+
+float calcularTarjeta(float precioTotalVuelo, float ratio);
+float dividir(float dividendo, float divisor);
+float calularPrecioPorKm(float precioTotalVuelo, int kms);
+float calcularDiferencia(float precioTotalAerolineas, float precioTotalLatam);
+
+#define RATIO_TARJETA_DEBITO -10
+#define RATIO_TARJETA_CREDITO 25
+#define PRECIO_BITCOIN 4606954.55
+
+#ifndef FUNCIONES_H_
+#define FUNCIONES_H_
+
+
+
+#endif /* FUNCIONES_H_ */

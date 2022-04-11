@@ -1,0 +1,19 @@
+
+float calcularTarjeta(float precioTotalVuelo, float ratio) {
+	return precioTotalVuelo + precioTotalVuelo * ratio / 100;
+}
+
+float dividir(float dividendo, float divisor) {
+	return dividendo / divisor;
+}
+
+float calcularDiferencia(float precioTotalAerolineas, float precioTotalLatam)
+{
+	float resultado = precioTotalAerolineas - precioTotalLatam;
+
+	if (resultado < 0) {
+		return resultado * -1;
+	}
+
+	return resultado;
+}

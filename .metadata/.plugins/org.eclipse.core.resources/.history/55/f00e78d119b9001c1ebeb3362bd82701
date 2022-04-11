@@ -1,0 +1,8 @@
+
+float calcularTarjeta(float precioTotalVuelo, float ratio) {
+	return precioTotalVuelo + precioTotalVuelo * ratio / 100;
+}
+
+float calcularBitcoin(float precioTotalVuelo, float valorBTC) {
+	return precioTotalVuelo / valorBTC;
+}

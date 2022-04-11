@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main (void)
+{
+  char choice;
+
+  do
+  {
+    printf("Press y to continue the loop : ");
+    scanf(" %c",&choice); // note the space
+  }while(choice=='y');
+
+  return 0;
+}

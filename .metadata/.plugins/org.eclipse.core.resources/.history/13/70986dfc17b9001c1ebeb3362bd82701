@@ -1,0 +1,4 @@
+
+float calcularTarjetaDebito(float precioTotalVuelo, float ratio) {
+	return precioTotalVuelo + precioTotalVuelo * ratio / 100;
+}

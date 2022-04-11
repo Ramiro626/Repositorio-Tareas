@@ -4,7 +4,8 @@
  Author      : Ramiro Sanchez
  Version     : 1
  Copyright   : DIV D
- Description : Entrar 5 caracteres
+ Description : Ejercicio 2-4:
+			   Ingresar 5 caracteres e informar cuantas letras p (minúsculas) se ingresaron.
  ============================================================================
  */
 
